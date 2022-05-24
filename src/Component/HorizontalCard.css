@@ -1,0 +1,78 @@
+.Horizontal-container {
+    box-shadow: 0px 0px 1px 0px #fff;
+    text-align: center;
+    padding: 25px;
+    margin: 25px 0px;
+}
+
+.Horizontal-container > .header {
+    margin: 15px;
+}
+
+.Horizontal-Card {
+    display: flex;
+    overflow-x: auto;
+    margin: 25px -25px;
+    overflow-y: hidden;
+    /* box-shadow: 0px 0px 1px 0px #fff; */
+    scroll-behavior: smooth;
+}
+
+.Horizontal-Card::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.Horizontal-Card > b {
+    margin: 40px auto;
+}
+
+.Horizontal-Card > .load-more-btn {
+    height: max-content;
+    align-self: center;
+    margin: 0px 25px;
+    min-width: 200px;
+}
+
+.buttons-horizontal {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: calc( 100% - 50px);
+}
+
+.buttons-horizontal button {
+    width: 100px;
+    font-size: 20px;
+}
+
+/* .buttons-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-horizontal > button {
+    margin: 0px;
+    height: 200px;
+    position: absolute;
+}
+
+.buttons-horizontal > .prev , .buttons-horizontal > .next {
+    transform: translateY(300px);
+    font-size: 30px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 1px 0px #fff;
+}
+
+.buttons-horizontal > .prev {
+    border-left-color: transparent;
+    left: 0;
+}
+
+.buttons-horizontal > .next {
+    border-right-color: transparent;
+    right: 0;
+} */

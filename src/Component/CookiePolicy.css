@@ -1,0 +1,44 @@
+.box {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box > .inner-box {
+    width: 650px;
+    height: 500px;
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    max-width: calc( 100vw - 60px );
+    max-height: calc( 100vh - 60px );
+    overflow-y: auto;
+}
+
+.box > .inner-box > header {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.box > .inner-box > .content {
+    margin: 25px 0px;
+}
+
+.box > .inner-box > .content > header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box > .inner-box > .content > .text {
+    font-size: 16px;
+    word-spacing: 4px;
+    line-height: 20px;
+}

@@ -1,0 +1,57 @@
+.movie-series-card {
+    /* border: 5px solid #fff; */
+    border: 5px solid rgb(249, 159, 120);
+    margin: 10px;
+    width: max-content;
+    height: max-content;
+    width: 230px;
+    height: 500px;
+    max-width: 250px;
+}
+
+.movie-series-card > img {
+    width: 230px;
+    height: 330px;
+    object-fit: cover;
+    /* border: 1px solid #fff; */
+    border: 1px solid rgb(249, 159, 120);;
+}
+
+.movie-series-card > .no-poster {
+    width: 230px;
+    height: 330px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #aaa;
+    border: 1px solid #fff;
+}
+
+.movie-series-card > .loading-movie {
+    margin: 0px;
+    border: 0px;
+}
+
+.movie-series-card > .title {
+    font-size: 16px;
+    padding: 8px;
+}
+
+.movie-series-card > .year {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.movie-series-card > .type {
+    background-color: #fff;
+    margin: 15px 0px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    width: 210px;
+    font-weight: bold;
+}

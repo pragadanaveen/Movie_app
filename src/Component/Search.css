@@ -1,0 +1,32 @@
+.searchbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchbox > .input-box {
+    width: 350px;
+    max-width: 75vw;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 15px 12px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.load-more-btn {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: max-content;
+    margin: 10px auto;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
