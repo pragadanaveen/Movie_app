@@ -72,6 +72,12 @@ const Search = () => {
     }
 
     useEffect(() => {
+        if(!searchParams.get("movie")){
+            setMovieList([])
+            setMovieName("")
+            document.title = "Search"
+            return;
+        }
         // if movie name available and page is greater than 0
         if (searchParams.get("movie") && moviePage >= 1) {
             if (movieName !== searchParams.get("movie")) {
@@ -82,7 +88,11 @@ const Search = () => {
                 movie: searchParams.get("movie"),
                 page: moviePage
             })
-        }
+
+            document.title = "Search : "+searchParams.get("movie")
+        } else {
+            document.title = "Search"
+        }        
     }, [searchParams])
 
 

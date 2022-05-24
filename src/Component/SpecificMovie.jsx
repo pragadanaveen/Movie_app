@@ -46,6 +46,10 @@ const SpecificMovie = () => {
         return req.data;
     }
 
+    const set_title = (title) => {
+        document.title = title
+    }
+
     const add_movie = (movie) => {
         // add movie to database
         db.get("movies-data")
@@ -88,6 +92,8 @@ const SpecificMovie = () => {
                 // adding movie
                 add_movie(response)
 
+                set_title(response?.Title)
+
             } else if (response.Response === "False") {
                 // API could not find the id
                 setMovieAvailable(false)
@@ -111,6 +117,8 @@ const SpecificMovie = () => {
                         if (resp?.movies[imdbId]) {
                             setMovieLoaded(true)
                             setMovie(resp.movies[imdbId])
+                            set_title(resp.movies[imdbId]?.Title)
+
                             setWarning("Cannot load the movie details, using previously fetched data.")
                         }
                     }
@@ -231,8 +239,6 @@ const SpecificMovie = () => {
                                     :
                                     []
                             }
-
-
 
                             {
                                 isMovieAvailable && isMovieLoaded ?

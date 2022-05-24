@@ -15,9 +15,6 @@ const App = () => {
     const [ shouldShowCookiePolicy, setShowCookiePolicy ] = useState(false);
 
     useEffect(()=>{
-        // setting document title
-        document.title = config.APP_NAME + " : Home";
-
         // getting if user accepted or not cookie policy
         db.get("Cookie-Content-Policy")
         .then(d=>{

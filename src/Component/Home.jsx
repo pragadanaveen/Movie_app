@@ -2,10 +2,17 @@
 Home of application
 */
 
+import { useEffect } from "react";
+import { config } from "../config";
 import HorizontalCard from "./HorizontalCard";
 
 const Home = () => {
-    return(
+    useEffect(() => {
+        // setting document title
+        document.title = config.APP_NAME + " : Home";
+    }, [])
+
+    return (
         <div className="paged" id="Home-page">
             <header className="header">Movies and Series</header>
             {/*

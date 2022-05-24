@@ -90,6 +90,7 @@
 
 .specific-movie>.s-movie .s-movie-genres {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .specific-movie>.s-movie .s-movie-genres>.s-movie-genre {
