@@ -67,6 +67,10 @@
 
 .specific-movie>.s-movie>.s-movie-text>.s-movie-nm {
     font-size: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    max-width: 83.5vw;
 }
 
 .specific-movie>.s-movie>.s-movie-text>.s-movie-release-year {
