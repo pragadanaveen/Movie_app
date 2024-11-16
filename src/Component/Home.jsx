@@ -18,7 +18,12 @@ const Home = () => {
             {/*
             below are some horizontal card, need to pass only search term as shown below.
             */}
+            <HorizontalCard searchItem={"Telugu"} key="Telugu" />
+            <HorizontalCard searchItem={"Hindi"} key="Hindi" />
+            <HorizontalCard searchItem={"English"} key="English" />
+
             <HorizontalCard searchItem={"Marvel"} key="Marvel" />
+            <HorizontalCard searchItem={"Game of Thrones"} key="Game of Thrones" />
             <HorizontalCard searchItem={"Spider-Man"} key="Spider-Man" />
             <HorizontalCard searchItem={"Batman"} key="Batman" />
             <HorizontalCard searchItem={"Superman"} key="Superman" />
